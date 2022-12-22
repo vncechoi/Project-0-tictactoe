@@ -36,7 +36,7 @@ Tic Tac Toe is a two-player based game which each player take alternate turns in
 ## MVP codes that I found really helpful
 
 * Making the [grid](#javascript) using nth-child
-* Feature for the [color](#javascript) of the grid to change 
+* Feature for the [color](#css) of the grid to change 
 * for of loop [condition](#javascript) of the winning combination
 
 ## Issues
