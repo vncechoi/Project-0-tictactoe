@@ -13,22 +13,52 @@ Tic Tac Toe is a two-player based game which each player take alternate turns in
 ## Project Checkpoints
 
 1. Sketch-up design and collect resources (Didn't figure out how to use figma *sad face*).
- * Selection of images/ colours/ fonts
- * Reference to other MVP projects and online samples
+  * Selection of images/ colours/ fonts
+  * Reference to other MVP projects and online samples
 2. Create the bare html/css elements
- * Start off small and simple 
- * Add on details later after Javascript is working
+  * Start off small and simple 
+  * Add on details later after Javascript is working
 3. Create javascript function such as:
- * Winning prompts a text/color
- * Character selection
- * Score tracker for each character
- * Reset round button
- * Rest game button
- * Audio cues
+  * Winning prompts a text/color
+  * Character selection
+  * Score tracker for each character
+  * Reset round button
+  * Rest game button
+  * Audio cues
 4. Re-evaluate
- * Time management
- * Realisitic goals and cutting features 
-    - Audio cues
+  * Time management
+  * Realisitic goals and cutting features 
+      - Audio cues
+
+## Sample Image of Game
+![image of sample](/images/Sample%20Image.png "Sample Image")
+
+## MVP codes that I found really helpful
+
+* Making the [grid](#javascript) using nth-child
+* Feature for the [color](#javascript) of the grid to change 
+* for of loop [condition](#javascript) of the winning combination
+
+## Issues
+
+Font family from local library, didn't figure out how to make it work. Gave up honestly halfway need to find out how that works. Since even if i did make it work how would other consumers view it? Would it still display the specific font family?
+
+```javascript
+@font-face {
+    font-family: "Game Of Squids";
+    src: url("font/game_of_squids/Game Of Squids.ttf") format ('truetype');
+}
+```
+
+Time-management was an issue as i spent most of my time tinkering around with new ways instead of hard coding my way at times. I need to be able to not only take shortcuts but also try things on my own instead sourcing methods.
+
+## Additional
+
+Favourite Part
+The making of things from scratch although challenging was really nice to spend time just grinding out something of your own ideas and executing with different kinds of resources.
+
+Additions
+I would like to add the features i couldn't add like the player scoreboard and character selections. Time management of realistic stamp points and also being able to really just go at it instead of tinkering around too much would have been helpful and better use of my time.
 
 ## Codes 
 ### Javascript
@@ -81,7 +111,7 @@ function playerWon() {
     --drawing-blocks: red;
 }
 ```
-*__nth-child__ - used in this case for every 3rd grid remove the borders on the right & for every grid after the 6th grid remove the bottom border
+* __nth-child__ - used in this case for every 3rd grid remove the borders on the right & for every grid after the 6th grid remove the bottom border
 ```javascript
 .grid:nth-child(3n) {
     border-right: none;
@@ -90,5 +120,27 @@ function playerWon() {
     border-bottom: none;
 } 
 ```
-![image of sample](/images/Sample%20Image.png "Sample Image")
+## Installation and Running of the Game
 
+1. On the github page navigate to the Code (green) button
+2. Click and copy the URL of the repository
+  * To clone using the link
+3. Open Terminal
+4. Type git clone to the location in directory you want 
+5. Press enter to create your local game!
+6. Open the file in browser and play~
+
+## Credits
+
+* Christopher Hendrickson's Project
+(https://christopherhendrickson.github.io/tic-tac-toe/)
+
+* Build Tic Tac Toe with Javascript - Tutorial
+(https://www.youtube.com/watch?v=Y-GkMjUZsmM&t=740s)
+
+* Create a simple tic tace toe game using HTML CSS JavaScript
+(https://www.youtube.com/watch?v=B3pmT7Cpi24&t=21s)
+
+* Stack Overflow, w3school, Mdn web docs
+
+* Coffee and Energy Drinks!
