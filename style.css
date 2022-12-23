@@ -1,0 +1,105 @@
+/* .startScreen {
+    position:absolute;
+    top:0;
+    display:flex;
+    flex-direction: column;
+    z-index:100;
+    position:absolute;
+    background-image: url(images/click\ page.jpeg);
+    width:100vw;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-out;
+
+} */
+
+/* .startScreen.hidden > * {
+    display:none
+} */
+
+/* .startScreen.hidden {
+    opacity: 0;
+    z-index:-1;
+} */
+@font-face {
+    font-family: "Game Of Squids";
+    src: url("font/game_of_squids/Game Of Squids.ttf") format ('truetype');
+}
+@media only screen and (max-width: 900px) {
+    #gameboard {
+      width: auto;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --winning-blocks: #2d414b;
+    --drawing-blocks: red;
+}
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("images/wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Game Of Squids", sans-serif;
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    color: green;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.grid {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f44786;
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+} 
+.grid:nth-child(3n) {
+    border-right: none;
+}
+.grid:nth-child(6) ~ .grid {
+    border-bottom: none;
+} 
+#restartBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #f44786;
+    color: #333;
+    border-color: #f44786;
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}

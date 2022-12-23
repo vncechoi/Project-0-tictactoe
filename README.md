@@ -32,7 +32,7 @@ Tic Tac Toe is a two-player based game which each player take alternate turns in
 
 ## Sample Image of Game
 ![image of sample](/images/Sample%20Image.png "Sample Image")
-
+The [Game](file:///Users/Vincent/Desktop/Projects/Project-0-tictactoe/index.html)
 ## MVP codes that I found really helpful
 
 * Making the [grid](#javascript) using nth-child
